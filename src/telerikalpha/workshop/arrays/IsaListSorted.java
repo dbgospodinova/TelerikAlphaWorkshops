@@ -2,6 +2,8 @@ package telerikalpha.workshop.arrays;
 
 import java.util.Scanner;
 
+//TO DO  - Two incorrect tests!!! To be discussed on Wednesday
+
 public class IsaListSorted {
     public static void main(String[] args) {
         Scanner user_input = new Scanner(System.in);
