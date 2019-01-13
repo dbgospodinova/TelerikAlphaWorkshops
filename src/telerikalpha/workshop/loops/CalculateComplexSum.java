@@ -8,7 +8,6 @@ public class CalculateComplexSum {
         Integer n = Integer.parseInt(user_input.nextLine());
         Integer x = Integer.parseInt(user_input.nextLine());
 
-        Double fraction;
         Double numerator = 1.0;
         Double denominator = 1.0;
         Double sum = 1.0;
