@@ -15,7 +15,7 @@ public class Speeds {
         int count = 1;
         int group_members = 0;
         int sum = speeds[0];
-        int max_sum = 0;
+        int max_sum = speeds[0];
         int min_speed = speeds[0];
 
         for (int i = 1; i < speeds.length; i++) {
