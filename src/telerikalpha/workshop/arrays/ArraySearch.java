@@ -9,7 +9,7 @@ public class ArraySearch {
         String[] arrOfStr = user_input.next().split(",");
         Integer[] numbers = new Integer[arrOfStr.length];
         boolean number_present = true;
-        int number = 0;
+        //int number = 0;
         String result = "";
 
         for (int i = 1; i <= arrOfStr.length; i++) {
