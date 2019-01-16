@@ -2,48 +2,32 @@ package telerikalpha.workshop.arrays;
 
 import java.util.Scanner;
 
-//TO DO  - Two incorrect tests!!! To be discussed on Wednesday
-
 public class IsaListSorted {
     public static void main(String[] args) {
         Scanner user_input = new Scanner(System.in);
         Integer count_of_arrays = Integer.parseInt(user_input.nextLine());
-        String[] arrOfArr = new String[count_of_arrays];
-        String[] arrOfStr;
-        boolean temp = true;
+        boolean is_sorted = false;
+        Boolean[] result = new Boolean[count_of_arrays];
 
-        Boolean[] results = new Boolean[count_of_arrays];
+        for(int i = 0; i < count_of_arrays; i++){
+            String[] input = user_input.nextLine().split(",");
+            Integer[] array = new Integer[input.length];
+            for (int j = 0; j < input.length - 1; j++){
+                array[j] = Integer.parseInt(input[j]);
+                array[j + 1] = Integer.parseInt(input[j + 1]);
 
-        if (count_of_arrays > 0 & count_of_arrays <= 10) {
-            for (int i = 0; i < count_of_arrays; i++) {
-                arrOfArr[i] = user_input.nextLine();
+                if (array[j + 1] >= array [j]){
+                    is_sorted = true;
+                }else{
+                    is_sorted = false;
+                    break;
+                }
             }
+            result[i] = is_sorted;
         }
 
-        for (int j = 0; j < count_of_arrays; j++) {
-            arrOfStr = arrOfArr[j].split(",");
-            if (arrOfStr.length >= 1 & arrOfStr.length <= 20) {
-                Integer[] numbers = new Integer[arrOfStr.length];
-                for (int k = 0; k < numbers.length - 1; k++) {
-                    numbers[k] = Integer.parseInt(arrOfStr[k]);
-                    numbers[k + 1] = Integer.parseInt(arrOfStr[k + 1]);
-
-                    if (numbers[k] <= numbers[k + 1] & temp) {
-                        results[j] = true;
-                    } else {
-                        results[j] = false;
-                        temp = false;
-                    }
-                }
-
-                if (j < count_of_arrays - 1) {
-                    System.out.println(results[j]);
-                } else {
-                    System.out.println(results[j]);
-                }
-
-            }
-
+        for(int ii = 0; ii < count_of_arrays; ii++){
+            System.out.println(result[ii]);
         }
     }
 }
