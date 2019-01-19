@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class CrookedDigits {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
-        String[] input = user_input.nextLine().replaceAll("[-.,]", "").split("");
+        Scanner userInput = new Scanner(System.in);
+        String[] input = userInput.nextLine().replaceAll("[-.,]", "").split("");
         int number = 0;
         int sum = 0;
 

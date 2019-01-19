@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class PrimeTriangle {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        Integer n = Integer.parseInt(user_input.nextLine());
+        Integer n = Integer.parseInt(userInput.nextLine());
 
         for (int k = 1; k <= n; k++) {
             if (isPrime(k)) {
