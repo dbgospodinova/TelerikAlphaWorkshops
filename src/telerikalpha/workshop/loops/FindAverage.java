@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class FindAverage {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        Integer n = Integer.parseInt(user_input.nextLine());
+        Integer n = Integer.parseInt(userInput.nextLine());
         Double number;
         Double sum = 0.0;
 
         for (int i = 0; i < n; i++) {
-            number = Double.parseDouble(user_input.nextLine());
+            number = Double.parseDouble(userInput.nextLine());
             sum = sum + number;
         }
 

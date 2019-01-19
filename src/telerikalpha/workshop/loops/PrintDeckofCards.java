@@ -4,58 +4,58 @@ import java.util.Scanner;
 
 public class PrintDeckofCards {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
         String[] cards = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
 
-        String card_sign = user_input.next();
-        String card_face;
+        String cardSign = userInput.next();
+        String cardFace;
 
-        switch (card_sign) {
+        switch (cardSign) {
             case "2":
-                card_face = "1";
+                cardFace = "1";
                 break;
             case "3":
-                card_face = "2";
+                cardFace = "2";
                 break;
             case "4":
-                card_face = "3";
+                cardFace = "3";
                 break;
             case "5":
-                card_face = "4";
+                cardFace = "4";
                 break;
             case "6":
-                card_face = "5";
+                cardFace = "5";
                 break;
             case "7":
-                card_face = "6";
+                cardFace = "6";
                 break;
             case "8":
-                card_face = "7";
+                cardFace = "7";
                 break;
             case "9":
-                card_face = "8";
+                cardFace = "8";
                 break;
             case "10":
-                card_face = "9";
+                cardFace = "9";
                 break;
             case "J":
-                card_face = "10";
+                cardFace = "10";
                 break;
             case "Q":
-                card_face = "11";
+                cardFace = "11";
                 break;
             case "K":
-                card_face = "12";
+                cardFace = "12";
                 break;
             case "A":
-                card_face = "13";
+                cardFace = "13";
                 break;
             default:
-                card_face = "";
+                cardFace = "";
                 break;
         }
-        Integer card = Integer.parseInt(card_face);
+        Integer card = Integer.parseInt(cardFace);
 
         for (int i = 0; i < card; i++) {
             String temp = cards[i];

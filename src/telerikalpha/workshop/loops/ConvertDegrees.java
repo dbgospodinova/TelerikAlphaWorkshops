@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class ConvertDegrees {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
-        String input = user_input.nextLine();
+        Scanner userInput = new Scanner(System.in);
+        String input = userInput.nextLine();
 
         String[] arrays = input.split("\\s+");
         int[] array = Arrays.asList(arrays).stream().mapToInt(Integer::parseInt).toArray();

@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class CalculateComplexSum {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
-        Integer n = Integer.parseInt(user_input.nextLine());
-        Integer x = Integer.parseInt(user_input.nextLine());
+        Scanner userInput = new Scanner(System.in);
+        Integer n = Integer.parseInt(userInput.nextLine());
+        Integer x = Integer.parseInt(userInput.nextLine());
 
         Double numerator = 1.0;
         Double denominator = 1.0;
