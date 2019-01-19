@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 public class ArraySort {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String[] arrOfStr = user_input.next().split(",");
-        Integer[] numbers = new Integer[arrOfStr.length];
+        String[] arrOfStr = userInput.next().split(",");
         String result = "";
 
         int zeros = 0;

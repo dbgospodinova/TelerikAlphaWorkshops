@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class SortNumbers {
     public static void main(String[] args) {
 
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String[] arrOfStr = user_input.nextLine().split(", ");
+        String[] arrOfStr = userInput.nextLine().split(", ");
         Integer[] numbers = new Integer[arrOfStr.length];
 
         for (int i = 0; i < arrOfStr.length; i++) {

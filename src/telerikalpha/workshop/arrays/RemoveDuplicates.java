@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class RemoveDuplicates {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
-        String[] input = user_input.next().split(",");
+        Scanner userInput = new Scanner(System.in);
+        String[] input = userInput.next().split(",");
 
         int occurrence = 0;
         String result = "";

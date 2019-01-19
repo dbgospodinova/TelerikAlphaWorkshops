@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class StrangeOrder {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
-        String[] input = user_input.next().split(",");
+        Scanner userInput = new Scanner(System.in);
+        String[] input = userInput.next().split(",");
         String negative = "";
         String zeros = "";
         String possitive = "";

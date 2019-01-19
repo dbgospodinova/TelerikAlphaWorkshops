@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class ReverseNumbers {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String[] input = user_input.nextLine().split(", ");
+        String[] input = userInput.nextLine().split(", ");
 
         for (int i = input.length - 1; i >= 0; i--) {
             if (i > 0) {

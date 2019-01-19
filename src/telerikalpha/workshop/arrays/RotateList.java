@@ -4,44 +4,44 @@ import java.util.Scanner;
 
 public class RotateList {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
-        String[] input = user_input.nextLine().split(",");
-        Integer n = new Integer(user_input.nextLine());
-        int rotation_position = 0;
+        Scanner userInput = new Scanner(System.in);
+        String[] input = userInput.nextLine().split(",");
+        Integer n = new Integer(userInput.nextLine());
+        int rotationPosition = 0;
 
         if (n > input.length) {
-            rotation_position = n % input.length;
+            rotationPosition = n % input.length;
         } else {
-            rotation_position = n;
+            rotationPosition = n;
         }
 
-        //System.out.println(rotation_position);
+        //System.out.println(rotationPosition);
 
-        String[] rotated_arr = new String[input.length];
+        String[] rotatedArr = new String[input.length];
 
-/*        for (int i = 0; i < input.length - rotation_position; i++) {
-            rotated_arr[i] = input[rotation_position + i];
+/*        for (int i = 0; i < input.length - rotationPosition; i++) {
+            rotatedArr[i] = input[rotationPosition + i];
         }
 
-        for (int j = 0; j < rotation_position; j++) {
-            rotated_arr[input.length - rotation_position + j] = input[j];
+        for (int j = 0; j < rotationPosition; j++) {
+            rotatedArr[input.length - rotationPosition + j] = input[j];
         }*/
 
         for (int i = 0; i < input.length; i++) {
-            if (i < input.length - rotation_position) {
-                rotated_arr[i] = input[rotation_position + i];
+            if (i < input.length - rotationPosition) {
+                rotatedArr[i] = input[rotationPosition + i];
             } else {
-                for (int j = 0; j < rotation_position; j++) {
-                    rotated_arr[input.length - rotation_position + j] = input[j];
+                for (int j = 0; j < rotationPosition; j++) {
+                    rotatedArr[input.length - rotationPosition + j] = input[j];
                 }
             }
         }
 
-        for (int jj = 0; jj < rotated_arr.length; jj++) {
-            if (jj < rotated_arr.length - 1) {
-                System.out.print(rotated_arr[jj] + ",");
+        for (int jj = 0; jj < rotatedArr.length; jj++) {
+            if (jj < rotatedArr.length - 1) {
+                System.out.print(rotatedArr[jj] + ",");
             } else {
-                System.out.println(rotated_arr[jj]);
+                System.out.println(rotatedArr[jj]);
             }
         }
     }

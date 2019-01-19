@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class CombineLists {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
-        String[] first_array = user_input.nextLine().split(",");
-        String[] second_array = user_input.nextLine().split(",");
+        Scanner userInput = new Scanner(System.in);
+        String[] firstArray = userInput.nextLine().split(",");
+        String[] secondArray = userInput.nextLine().split(",");
 
 
-        for (int i = 0; i < first_array.length; i ++){
-            if (i < first_array.length - 1){
-                System.out.print(first_array[i] + ",");
-                System.out.print(second_array[i] + ",");
+        for (int i = 0; i < firstArray.length; i ++){
+            if (i < firstArray.length - 1){
+                System.out.print(firstArray[i] + ",");
+                System.out.print(secondArray[i] + ",");
             }else{
-                System.out.print(first_array[i] + ",");
-                System.out.print(second_array[i]);
+                System.out.print(firstArray[i] + ",");
+                System.out.print(secondArray[i]);
             }
         }
     }

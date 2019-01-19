@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class ArraySearch {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String[] arrOfStr = user_input.next().split(",");
+        String[] arrOfStr = userInput.next().split(",");
         Integer[] numbers = new Integer[arrOfStr.length];
-        boolean number_present = true;
+        boolean numberPresent = true;
         //int number = 0;
         String result = "";
 
@@ -17,14 +17,14 @@ public class ArraySearch {
                 numbers[j] = Integer.parseInt(arrOfStr[j]);
 
                 if(numbers[j] == i){
-                    number_present = false;
+                    numberPresent = false;
                     break;
                 }else{
-                    number_present = true;
+                    numberPresent = true;
                 }
             }
 
-            if (number_present){
+            if (numberPresent){
                 result = result + i;
                 System.out.print(result);
                 result = "" + ",";

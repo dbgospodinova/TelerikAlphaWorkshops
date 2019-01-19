@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class BelowAndAboveAverage {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String[] arrOfStr = user_input.next().split(",");
+        String[] arrOfStr = userInput.next().split(",");
         Double[] numbers = new Double[arrOfStr.length];
         double sum = 0;
 
