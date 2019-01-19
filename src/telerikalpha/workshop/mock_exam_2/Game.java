@@ -5,18 +5,18 @@ import java.util.Scanner;
 
 public class Game {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
-        Integer number = Integer.parseInt(user_input.nextLine());
+        Scanner userInput = new Scanner(System.in);
+        Integer number = Integer.parseInt(userInput.nextLine());
 
-        Integer first_digit = number / 100;
-        Integer second_digit = (number - first_digit * 100) / 10;
-        Integer third_digit = number - first_digit * 100 - second_digit * 10;
+        Integer firstDigit = number / 100;
+        Integer secondDigit = (number - firstDigit * 100) / 10;
+        Integer thirdDigit = number - firstDigit * 100 - secondDigit * 10;
 
         Integer[] combinations = new Integer[4];
-        combinations[0] = first_digit + second_digit + third_digit;
-        combinations[1] = first_digit * second_digit * third_digit;
-        combinations[2] = first_digit + second_digit * third_digit;
-        combinations[3] = first_digit * second_digit + third_digit;
+        combinations[0] = firstDigit + secondDigit + thirdDigit;
+        combinations[1] = firstDigit * secondDigit * thirdDigit;
+        combinations[2] = firstDigit + secondDigit * thirdDigit;
+        combinations[3] = firstDigit * secondDigit + thirdDigit;
 
         Arrays.sort(combinations);
 
