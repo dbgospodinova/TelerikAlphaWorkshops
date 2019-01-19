@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class GuessTheSeason {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String month = user_input.nextLine();
-        Integer day = Integer.parseInt(user_input.next());
+        String month = userInput.nextLine();
+        Integer day = Integer.parseInt(userInput.next());
 
         String season;
 

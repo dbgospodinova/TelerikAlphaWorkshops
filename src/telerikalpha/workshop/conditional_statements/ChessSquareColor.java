@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class ChessSquareColor {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String user_input_file = user_input.next();
+        String userInputFile = userInput.next();
 
-        user_input.nextLine();
-        String user_input_rank = user_input.next();
-        Integer input_rank = Integer.parseInt(user_input_rank);
+        userInput.nextLine();
+        String userInputRank = userInput.next();
+        Integer inputRank = Integer.parseInt(userInputRank);
 
-        if (user_input_file.matches("([abcdefgh])") & (input_rank >= 1 & input_rank <= 8)) {
-            if ((user_input_file.matches("([aceg])") & user_input_rank.matches("([1357])")) |
-                    (user_input_file.matches("([bdfh])") & user_input_rank.matches("([2468])"))){
+        if (userInputFile.matches("([abcdefgh])") & (inputRank >= 1 & inputRank <= 8)) {
+            if ((userInputFile.matches("([aceg])") & userInputRank.matches("([1357])")) |
+                    (userInputFile.matches("([bdfh])") & userInputRank.matches("([2468])"))){
                 System.out.println("dark");
 
             }else{

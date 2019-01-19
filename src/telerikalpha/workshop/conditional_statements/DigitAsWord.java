@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class DigitAsWord {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
-        String digit = user_input.next();
+        Scanner userInput = new Scanner(System.in);
+        String digit = userInput.next();
 
         String word;
 

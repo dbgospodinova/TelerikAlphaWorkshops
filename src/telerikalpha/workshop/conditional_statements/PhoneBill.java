@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class PhoneBill {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        Integer messages = Integer.parseInt(user_input.nextLine());
-        Integer minutes = Integer.parseInt(user_input.nextLine());
+        Integer messages = Integer.parseInt(userInput.nextLine());
+        Integer minutes = Integer.parseInt(userInput.nextLine());
 
         int additional;
         double amount;

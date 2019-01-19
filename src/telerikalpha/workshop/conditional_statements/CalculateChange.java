@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class CalculateChange {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
-        double price = Double.parseDouble(user_input.nextLine());
-        double paid = Double.parseDouble(user_input.nextLine());
+        Scanner userInput = new Scanner(System.in);
+        double price = Double.parseDouble(userInput.nextLine());
+        double paid = Double.parseDouble(userInput.nextLine());
 
         int change = (int)((paid - price)*100);
         int temp;

@@ -4,43 +4,43 @@ import java.util.Scanner;
 
 public class ChineseZodiac {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        Integer year = Integer.parseInt(user_input.next());
+        Integer year = Integer.parseInt(userInput.next());
 
         int zodiac = year % 12;
-        String zodiac_sign;
+        String zodiacSign;
 
 
         switch (zodiac) {
-            case 0: zodiac_sign = "Monkey";
+            case 0: zodiacSign = "Monkey";
                 break;
-            case 1: zodiac_sign = "Rooster";
+            case 1: zodiacSign = "Rooster";
                 break;
-            case 2:  zodiac_sign = "Dog";
+            case 2:  zodiacSign = "Dog";
                 break;
-            case 3:  zodiac_sign = "Pig";
+            case 3:  zodiacSign = "Pig";
                 break;
-            case 4:  zodiac_sign = "Rat";
+            case 4:  zodiacSign = "Rat";
                 break;
-            case 5:  zodiac_sign = "Ox";
+            case 5:  zodiacSign = "Ox";
                 break;
-            case 6:  zodiac_sign = "Tiger";
+            case 6:  zodiacSign = "Tiger";
                 break;
-            case 7:  zodiac_sign = "Hare";
+            case 7:  zodiacSign = "Hare";
                 break;
-            case 8:  zodiac_sign = "Dragon";
+            case 8:  zodiacSign = "Dragon";
                 break;
-            case 9:  zodiac_sign = "Snake";
+            case 9:  zodiacSign = "Snake";
                 break;
-            case 10:  zodiac_sign = "Horse";
+            case 10:  zodiacSign = "Horse";
                 break;
-            case 11:  zodiac_sign = "Sheep";
+            case 11:  zodiacSign = "Sheep";
                 break;
-            default: zodiac_sign = "";
+            default: zodiacSign = "";
                 break;
         }
 
-        System.out.println(zodiac_sign);
+        System.out.println(zodiacSign);
     }
 }

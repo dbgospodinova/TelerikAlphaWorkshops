@@ -5,14 +5,14 @@ import java.util.Scanner;
 
 public class BiggestOf5 {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
         Float arrayOfNumbers[] = new Float[5];
 
         for (int i = 0; i < arrayOfNumbers.length; i++) {
-            String user_input_number = user_input.next();
-            float number = Float.valueOf(user_input_number);
+            String userInputNumber = userInput.next();
+            float number = Float.valueOf(userInputNumber);
             arrayOfNumbers[i] = number;
-            user_input.nextLine();
+            userInput.nextLine();
         }
 
         Arrays.sort(arrayOfNumbers);

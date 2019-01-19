@@ -4,22 +4,22 @@ import java.util.Scanner;
 
 public class SortThreeNumbers {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String user_input_numberOne = user_input.next();
-        int numberOne = Integer.parseInt(user_input_numberOne);
+        String userInputNumberOne = userInput.next();
+        int numberOne = Integer.parseInt(userInputNumberOne);
 
-        user_input.nextLine();
+        userInput.nextLine();
 
-        String user_input_numberTwo = user_input.next();
-        int numberTwo = Integer.parseInt(user_input_numberTwo);
+        String userInputNumberTwo = userInput.next();
+        int numberTwo = Integer.parseInt(userInputNumberTwo);
 
-        user_input.nextLine();
+        userInput.nextLine();
 
-        String user_input_numberThree = user_input.next();
-        int numberThree = Integer.parseInt(user_input_numberThree);
+        String userInputNumberThree = userInput.next();
+        int numberThree = Integer.parseInt(userInputNumberThree);
 
-        user_input.nextLine();
+        userInput.nextLine();
 
         int biggest=0;
         int middle=0;
