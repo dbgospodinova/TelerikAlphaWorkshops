@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Converter {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String user_input_miles = user_input.next();
+        String userInputMiles = userInput.next();
 
-        int miles = Integer.parseInt(user_input_miles);
+        int miles = Integer.parseInt(userInputMiles);
         double consumption = 4.54 / (miles*1.6) * 100 ;
         int litres = (int)consumption;
 

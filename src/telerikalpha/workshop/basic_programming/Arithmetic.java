@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class Arithmetic {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String input_a = user_input.next();
-        int a = Integer.parseInt(input_a);
+        String inputA = userInput.next();
+        int a = Integer.parseInt(inputA);
 
-        user_input.nextLine();
+        userInput.nextLine();
 
-        String input_b = user_input.next();
-        int b = Integer.parseInt(input_b);
+        String inputB = userInput.next();
+        int b = Integer.parseInt(inputB);
 
         int sum = a +b;
         int difference = a - b;

@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class RectangleArea {
     public static void main(String[] args) {
 
-        Scanner user_input = new Scanner(System.in);
-        String input_width = user_input.next();
+        Scanner userInput = new Scanner(System.in);
+        String input_width = userInput.next();
         int width = Integer.parseInt(input_width);
 
-        user_input.nextLine();
-        String input_height = user_input.next();
+        userInput.nextLine();
+        String input_height = userInput.next();
         int height = Integer.parseInt(input_height);
 
-        int rectangle_area = width * height;
+        int rectangleArea = width * height;
 
-        System.out.println(rectangle_area);
+        System.out.println(rectangleArea);
     }
 
 }

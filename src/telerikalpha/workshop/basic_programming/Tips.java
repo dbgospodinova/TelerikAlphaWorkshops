@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Tips {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String input_bill = user_input.next();
-        double bill = Double.parseDouble(input_bill);
+        String inputBill = userInput.next();
+        double bill = Double.parseDouble(inputBill);
         double tip = bill*0.1;
-        double total_sum = bill+tip;
+        double totalSum = bill+tip;
 
-        System.out.println((int)total_sum);
+        System.out.println((int)totalSum);
     }
 }

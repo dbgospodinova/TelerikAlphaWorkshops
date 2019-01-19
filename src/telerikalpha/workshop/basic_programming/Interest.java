@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Interest {
     public static void main(String[] args) {
-        Scanner user_inpit = new Scanner(System.in);
+        Scanner userInpit = new Scanner(System.in);
 
-        String input = user_inpit.next();
+        String input = userInpit.next();
         double deposit=Double.parseDouble(input);
 
         for (int i=0; i<3; i++){

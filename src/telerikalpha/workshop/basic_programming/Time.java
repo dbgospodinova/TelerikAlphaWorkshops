@@ -4,33 +4,33 @@ import java.util.Scanner;
 
 public class Time {
     public static void main(String[] args) {
-        Scanner user_input = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 
-        String user_input_days = user_input.next();
-        int days = Integer.parseInt(user_input_days);
+        String userInputDays = userInput.next();
+        int days = Integer.parseInt(userInputDays);
 
-        user_input.nextLine();
+        userInput.nextLine();
 
-        String input_input_hours = user_input.next();
-        int hours = Integer.parseInt(input_input_hours);
+        String inputInputHours = userInput.next();
+        int hours = Integer.parseInt(inputInputHours);
 
-        user_input.nextLine();
+        userInput.nextLine();
 
-        String input_input_minutes = user_input.next();
-        int minutes = Integer.parseInt(input_input_minutes);
+        String inputInputMinutes = userInput.next();
+        int minutes = Integer.parseInt(inputInputMinutes);
 
-        user_input.nextLine();
+        userInput.nextLine();
 
-        String input_input_seconds = user_input.next();
-        int seconds = Integer.parseInt(input_input_seconds);
+        String inputInputSeconds = userInput.next();
+        int seconds = Integer.parseInt(inputInputSeconds);
 
-        int time_in_seconds = days * 86400 + hours * 3600 + minutes * 60 + seconds;
+        int timeInSeconds = days * 86400 + hours * 3600 + minutes * 60 + seconds;
 
         if (0 <= days & days <= 1000){
             if (0 <= hours & hours <= 1000){
                 if (0 <= minutes & minutes <= 1000){
                     if (0 <= seconds & seconds <= 1000){
-                        System.out.println(time_in_seconds);
+                        System.out.println(timeInSeconds);
                     }
                 }
             }
