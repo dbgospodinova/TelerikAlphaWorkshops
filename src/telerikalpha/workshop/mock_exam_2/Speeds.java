@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Speeds {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
-        Integer cars = Integer.parseInt(userInput.nextLine());
+        int cars = Integer.parseInt(userInput.nextLine());
         Integer[] speeds = new Integer[cars];
 
         for (int j = 0; j < cars; j++) {
@@ -25,18 +25,19 @@ public class Speeds {
                 if (count >= groupMembers) {
                     if (count > groupMembers) {
                         maxSum = sum;
-                    } else if (sum > maxSum) {
+                    } else if (sum >= maxSum) {
                         maxSum = sum;
                     }
                 }
+
             } else {
                 minSpeed = speeds[i];
                 if (count >= groupMembers) {
-                    if (sum >= maxSum) {
+                    if (sum > maxSum) {
                         maxSum = sum;
                     }
+                    groupMembers = count;
                 }
-                groupMembers = count;
                 count = 1;
                 sum = speeds[i];
             }
