@@ -1,4 +1,4 @@
-package telerikalpha.workshop.SolveProblems;
+package telerikalpha.workshop.training;
 
 //The solution is slow. Need refactoring using StringBuilder and some improvements
 

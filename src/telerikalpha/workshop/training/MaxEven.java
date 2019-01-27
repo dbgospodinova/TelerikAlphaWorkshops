@@ -1,4 +1,4 @@
-package telerikalpha.workshop.SolveProblems;
+package telerikalpha.workshop.training;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package telerikalpha.workshop.SolveProblems;
+package telerikalpha.workshop.training;
 
 public class LongSequence {
     public static void main(String[] args) {
