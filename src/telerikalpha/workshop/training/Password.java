@@ -1,4 +1,4 @@
-package telerikalpha.workshop.training2;
+package telerikalpha.workshop.training;
 
 import java.util.Scanner;
 
